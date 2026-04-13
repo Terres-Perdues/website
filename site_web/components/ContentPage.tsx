@@ -10,6 +10,7 @@ interface ContentPageProps {
   title: string
   subtitle?: string
   image?: string
+  imageSize?: number
   breadcrumbs?: Breadcrumb[]
   leftText?: React.ReactNode
   rightText?: React.ReactNode
@@ -20,13 +21,14 @@ export default function ContentPage({
   title,
   subtitle,
   image,
+  imageSize = 280,
   breadcrumbs,
   leftText,
   rightText,
   children,
 }: ContentPageProps) {
   return (
-    <div className="px-16 py-12 max-w-6xl">
+    <div className="px-16 py-12">
 
       {/* Breadcrumb */}
       {breadcrumbs && (
@@ -55,23 +57,23 @@ export default function ContentPage({
         </nav>
       )}
 
-      {/* Main layout */}
-      <div className="flex gap-16">
+      {/* Main layout — 3 colonnes */}
+      <div className="flex gap-12">
 
-        {/* Left column */}
-        <div className="flex-shrink-0" style={{ width: '44%' }}>
-
-          {/* Circular image */}
-          {image && (
+        {/* Colonne 1 — Image ronde */}
+        {image && (
+          <div className="flex-shrink-0">
             <div
-              className="mb-8 overflow-hidden"
-              style={{ width: 280, height: 280, borderRadius: '50%', position: 'relative' }}
+              className="overflow-hidden"
+              style={{ width: imageSize, height: imageSize, borderRadius: '50%', position: 'relative' }}
             >
               <Image src={image} alt={title} fill className="object-cover" />
             </div>
-          )}
+          </div>
+        )}
 
-          {/* Title */}
+        {/* Colonne 2 — Titre, sous-titre, texte intro */}
+        <div style={{ width: '100%', maxWidth: 400 }}>
           <h1
             className="font-title leading-tight mb-2"
             style={{ fontSize: '3rem', color: '#425d34' }}
@@ -79,29 +81,27 @@ export default function ContentPage({
             {title}
           </h1>
 
-          {/* Subtitle */}
           {subtitle && (
             <p
-              className="font-body uppercase mb-8"
+              className="font-body uppercase mb-6"
               style={{ fontSize: 12, letterSpacing: '0.2em', color: '#7a7060' }}
             >
               {subtitle}
             </p>
           )}
 
-          {/* Left text */}
           {leftText && (
             <div
               className="font-body leading-relaxed"
-              style={{ fontSize: 15, color: '#2a2a2a' }}
+              style={{ fontSize: 20, color: '#2a2a2a' }}
             >
               {leftText}
             </div>
           )}
         </div>
 
-        {/* Right column */}
-        <div className="flex-1 pt-1">
+        {/* Colonne 3 — Corps de texte */}
+        <div style={{ width: '100%', maxWidth: 400 }}>
           {rightText && (
             <div
               className="font-body leading-relaxed"

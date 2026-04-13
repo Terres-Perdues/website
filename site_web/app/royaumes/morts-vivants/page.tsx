@@ -11,6 +11,7 @@ export default function Page() {
         title="Légion des damnés"
         subtitle="Morts-vivants"
         image={assetPath('/backgrounds/Accueil-arriere-plan-Toyalis.jpg')}
+        imageSize={510}
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
           { label: 'Royaumes' },
