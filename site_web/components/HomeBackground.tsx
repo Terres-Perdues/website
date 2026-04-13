@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { assetPath } from '@/lib/asset-path'
 
 const scenes = [
@@ -23,11 +23,12 @@ const scenes = [
 ]
 
 export default function HomeBackground() {
-  // Pick a random scene once per page load (server-stable via useMemo seed)
-  const scene = useMemo(
-    () => scenes[Math.floor(Math.random() * scenes.length)],
-    []
-  )
+  // Pick a random scene client-side only to avoid SSR/hydration mismatch
+  const [scene, setScene] = useState(scenes[0])
+
+  useEffect(() => {
+    setScene(scenes[Math.floor(Math.random() * scenes.length)])
+  }, [])
 
   return (
     <div className="relative w-full h-full">
