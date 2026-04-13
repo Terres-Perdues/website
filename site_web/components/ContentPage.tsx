@@ -74,7 +74,7 @@ export default function ContentPage({
           {/* Title */}
           <h1
             className="font-title leading-tight mb-2"
-            style={{ fontSize: '3rem', color: '#1e2d16' }}
+            style={{ fontSize: '3rem', color: '#425d34' }}
           >
             {title}
           </h1>

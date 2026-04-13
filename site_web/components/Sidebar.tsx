@@ -99,9 +99,7 @@ export default function Sidebar() {
               <>
                 <button
                   onClick={() => section.children ? toggleSection(section.label) : undefined}
-                  className={`nav-section block text-left w-full ${
-                    isActive(section.href) ? 'underline underline-offset-4' : ''
-                  }`}
+                  className="nav-section block text-left w-full"
                 >
                   {section.label}
                 </button>
@@ -164,7 +162,7 @@ export default function Sidebar() {
             width={168}
             height={46}
             className="object-contain"
-            style={{ filter: 'brightness(0) saturate(100%) invert(73%) sepia(38%) saturate(600%) hue-rotate(5deg) brightness(100%) contrast(95%)' }}
+            style={{ filter: 'brightness(0) saturate(100%) invert(72%) sepia(42%) saturate(420%) hue-rotate(358deg) brightness(93%) contrast(88%)' }}
           />
         </a>
       </div>

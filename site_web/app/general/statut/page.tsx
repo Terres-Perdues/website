@@ -11,7 +11,7 @@ export default function Page() {
         subtitle="Général"
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
-          { label: 'Général', href: '/general' },
+          { label: 'Général' },
           { label: 'Statut du serveur' },
         ]}
       />

@@ -13,7 +13,7 @@ export default function Page() {
         image={assetPath('/backgrounds/Accueil-arriere-plan-Toyalis.jpg')}
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
-          { label: 'Royaumes', href: '/royaumes' },
+          { label: 'Royaumes' },
           { label: 'Morts-vivants' },
         ]}
         leftText={

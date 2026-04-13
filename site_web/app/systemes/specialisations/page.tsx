@@ -11,7 +11,7 @@ export default function Page() {
         subtitle="Systèmes"
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
-          { label: 'Systèmes', href: '/systemes' },
+          { label: 'Systèmes' },
           { label: 'Spécialisations' },
         ]}
       />

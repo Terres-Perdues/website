@@ -69,24 +69,16 @@ export default function TopNav() {
 
   return (
     <header
-      className="flex items-center px-10 flex-shrink-0 relative z-50"
-      style={{ backgroundColor: '#3d572f', height: 72 }}
+      className="topnav-height flex items-center flex-shrink-0 relative z-50"
+      style={{ backgroundColor: '#3d572f', padding: '0 70px' }}
     >
-      {/* Logo + Title */}
-      <Link href="/" className="flex items-center gap-3 mr-14 hover:opacity-85 transition-opacity flex-shrink-0">
-        <Image src={assetPath('/svg/TP-logo-accueil.svg')} alt="Terres Perdues" width={44} height={44} className="object-contain" />
-        <div>
-          <span className="font-title text-white block leading-none" style={{ fontSize: '1.15rem' }}>
-            Terres Perdues
-          </span>
-          <span className="font-body text-white/40 block" style={{ fontSize: '0.55rem', letterSpacing: '0.15em' }}>
-            LE SORT EN EST JETÉ
-          </span>
-        </div>
+      {/* Logo */}
+      <Link href="/" className="flex items-center mr-28 hover:opacity-85 transition-opacity flex-shrink-0">
+        <Image src={assetPath('/svg/TP-logo-horizontale.svg')} alt="Terres Perdues" width={420} height={102} className="object-contain" />
       </Link>
 
       {/* Nav links */}
-      <nav className="flex items-center gap-10 flex-1">
+      <nav className="flex items-center flex-1" style={{ gap: '36px' }}>
         {navItems.map((item) =>
           item.external ? (
             <a
@@ -94,8 +86,8 @@ export default function TopNav() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-title text-white/80 hover:text-gold-tp transition-colors"
-              style={{ fontSize: '1rem' }}
+              className="font-title text-gold-tp hover:text-gold-light transition-colors"
+              style={{ fontSize: '1.35rem' }}
             >
               {item.label}
             </a>
@@ -106,18 +98,12 @@ export default function TopNav() {
               onMouseEnter={() => item.children && handleMouseEnter(item.label)}
               onMouseLeave={handleMouseLeave}
             >
-              <Link
-                href={item.href}
-                className="font-title hover:text-gold-tp transition-colors"
-                style={{
-                  fontSize: '1rem',
-                  color: pathname.startsWith(item.href) ? '#d7ae5d' : 'rgba(255,255,255,0.8)',
-                  textDecoration: pathname.startsWith(item.href) ? 'underline' : 'none',
-                  textUnderlineOffset: 4,
-                }}
+              <span
+                className="font-title text-gold-tp hover:text-gold-light transition-colors cursor-default"
+                style={{ fontSize: '1.35rem' }}
               >
                 {item.label}
-              </Link>
+              </span>
 
               {/* Dropdown */}
               {item.children && (
@@ -140,8 +126,8 @@ export default function TopNav() {
                         onClick={() => setOpenMenu(null)}
                         className="block font-body hover:text-gold-tp hover:bg-black/10 transition-colors"
                         style={{
-                          fontSize: '0.875rem',
-                          padding: '6px 20px',
+                          fontSize: '1.1rem',
+                          padding: '8px 24px',
                           color: pathname === child.href ? '#d7ae5d' : 'rgba(255,255,255,0.75)',
                         }}
                       >
@@ -157,11 +143,11 @@ export default function TopNav() {
       </nav>
 
       {/* Right actions */}
-      <div className="flex items-center gap-5 flex-shrink-0">
+      <div className="flex items-center gap-7 flex-shrink-0">
         <Link
           href="/inscriptions"
           className="font-title text-gold-tp hover:text-gold-light hover:border-gold-light transition-all duration-200 text-center"
-          style={{ fontSize: '0.9rem', padding: '6px 18px', border: '1.5px solid #d7ae5d', borderRadius: 5 }}
+          style={{ fontSize: '1.2rem', padding: '10px 26px', border: '1.5px solid #d7ae5d', borderRadius: 5 }}
         >
           Inscription
         </Link>
@@ -169,9 +155,9 @@ export default function TopNav() {
           <Image
             src={assetPath('/svg/DISCORD.svg')}
             alt="Discord"
-            width={90}
-            height={25}
-            style={{ filter: 'brightness(0) saturate(100%) invert(73%) sepia(38%) saturate(600%) hue-rotate(5deg) brightness(100%) contrast(95%)' }}
+            width={130}
+            height={36}
+            style={{ filter: 'brightness(0) saturate(100%) invert(72%) sepia(42%) saturate(420%) hue-rotate(358deg) brightness(93%) contrast(88%)' }}
           />
         </a>
       </div>

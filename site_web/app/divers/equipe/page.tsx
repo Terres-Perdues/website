@@ -11,7 +11,7 @@ export default function Page() {
         subtitle="Divers"
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
-          { label: 'Divers', href: '/divers' },
+          { label: 'Divers' },
           { label: "L'Équipe" },
         ]}
       />

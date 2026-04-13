@@ -11,7 +11,7 @@ export default function Page() {
         subtitle="Royaumes"
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
-          { label: 'Royaumes', href: '/royaumes' },
+          { label: 'Royaumes' },
           { label: 'Les Humains' },
         ]}
       />
