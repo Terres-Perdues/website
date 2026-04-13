@@ -23,43 +23,49 @@ const scenes = [
 ]
 
 export default function HomeBackground() {
-  // Pick a random scene client-side only to avoid SSR/hydration mismatch
-  const [scene, setScene] = useState(scenes[0])
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   useEffect(() => {
-    setScene(scenes[Math.floor(Math.random() * scenes.length)])
+    setActiveIndex(Math.floor(Math.random() * scenes.length))
   }, [])
 
   return (
     <div className="relative w-full h-full">
-      {/* Background image */}
-      <Image
-        src={scene.bg}
-        alt={scene.alt}
-        fill
-        className="object-cover object-center"
-        priority
-        quality={90}
-      />
+      {scenes.map((scene, i) => (
+        <div
+          key={scene.alt}
+          className="absolute inset-0 transition-opacity duration-700"
+          style={{ opacity: activeIndex === i ? 1 : 0 }}
+        >
+          <Image
+            src={scene.bg}
+            alt={scene.alt}
+            fill
+            className="object-cover object-center"
+            priority
+            quality={90}
+          />
 
-      {/* Subtle dark overlay on left edge for depth */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'linear-gradient(to right, rgba(45,64,34,0.35) 0%, transparent 30%)',
-        }}
-      />
+          {/* Subtle dark overlay on left edge for depth */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: 'linear-gradient(to right, rgba(45,64,34,0.35) 0%, transparent 30%)',
+            }}
+          />
 
-      {/* Kingdom SVG tag — bottom right */}
-      <Image
-        src={scene.tag}
-        alt={`Tag ${scene.alt}`}
-        height={90}
-        width={390}
-        className="absolute z-10 drop-shadow-lg object-contain"
-        style={{ bottom: '90px', right: 0 }}
-        priority
-      />
+          {/* Kingdom SVG tag — bottom right */}
+          <Image
+            src={scene.tag}
+            alt={`Tag ${scene.alt}`}
+            height={90}
+            width={390}
+            className="absolute z-10 drop-shadow-lg object-contain"
+            style={{ bottom: '90px', right: 0 }}
+            priority
+          />
+        </div>
+      ))}
     </div>
   )
 }
