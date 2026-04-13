@@ -28,7 +28,7 @@ export default function ContentPage({
   children,
 }: ContentPageProps) {
   return (
-    <div className="px-16 py-12">
+    <div className="px-6 py-8 md:px-16 md:py-12">
 
       {/* Breadcrumb */}
       {breadcrumbs && (
@@ -57,15 +57,21 @@ export default function ContentPage({
         </nav>
       )}
 
-      {/* Main layout — 3 colonnes */}
-      <div className="flex gap-12">
+      {/* Main layout — 3 colonnes desktop / 1 colonne mobile */}
+      <div className="flex flex-col md:flex-row gap-8 md:gap-12">
 
         {/* Colonne 1 — Image ronde */}
         {image && (
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex justify-center md:justify-start">
             <div
               className="overflow-hidden"
-              style={{ width: imageSize, height: imageSize, borderRadius: '50%', position: 'relative' }}
+              style={{
+                width: '100%',
+                maxWidth: imageSize,
+                aspectRatio: '1 / 1',
+                borderRadius: '50%',
+                position: 'relative',
+              }}
             >
               <Image src={image} alt={title} fill className="object-cover" />
             </div>
