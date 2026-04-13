@@ -1,0 +1,66 @@
+
+
+
+
+🎯 Prompt optimisé
+
+Je veux que tu développes un site web basé sur cette maquette.
+
+Le design doit être respecté au maximum. Aucun changement majeur de layout ou de direction artistique.
+
+Prend connaissance du dossier site_web / contenus
+Tu trouveras typographies, couleurs, jpgs arrière-plan, SVGs, structure du site
+Ainsi que la maquette au root
+
+
+🎮 Objectif du site
+
+Le site sert à promouvoir un serveur Ultima Online nommé "Terres Perdues" et convertir les visiteurs en joueurs.
+
+L’expérience doit être immersive, claire et orientée vers l’inscription et le Discord.
+
+
+🎨 Contraintes visuelles
+Palette vert foncé + or (voir fichier couleurs hex)
+Deux typographies (voir dossier typographies)
+Arrière-plans dans dossier dédié
+Arrière-plan + tag SVG :
+alignés en bas à gauche
+changent aléatoirement au refresh de la page d’accueil
+Logos et éléments SVG fournis
+Sidebar gauche fixe
+Zone droite :
+prend 100% de la hauteur et largeur disponible
+responsive selon résolution
+
+
+🧱 Structure du site
+
+Respecter la structure existante au root.
+
+
+
+⚙️ Tech
+Next.js
+Tailwind CSS
+Architecture en composants réutilisables
+Code propre et maintenable
+
+
+✨ UX / UI
+Animations légères :
+hover sur boutons
+transitions fluides
+Indicateur clair de navigation active (underline)
+Responsive (desktop + mobile)
+Optimisation performance (images, lazy load)
+
+🚨 Priorités
+Respect du design existant
+Clarté de navigation
+Performance
+
+
+
+
+

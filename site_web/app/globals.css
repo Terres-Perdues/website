@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green-tp: #3d572f;
+  --green-dark: #2d4022;
+  --gold-tp: #d7ae5d;
+  --sidebar-width: 590px;
+  --main-offset: 590px;
+}
+
+/* Moins de 2400px : sidebar réduite à 75% */
+@media (max-width: 2399px) {
+  :root {
+    --main-offset: 442px; /* 590 * 0.75 */
+  }
+  .sidebar-responsive {
+    transform: scale(0.75);
+    transform-origin: top left;
+    height: 133.33vh;
+  }
+}
+
+/* 2400px+ : taille normale */
+@media (min-width: 2400px) {
+  :root {
+    --main-offset: 590px;
+  }
+  .sidebar-responsive {
+    transform: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@layer components {
+  .nav-link {
+    @apply font-body text-sm text-white/70 hover:text-gold-tp transition-colors duration-200 cursor-pointer leading-relaxed;
+  }
+
+  .nav-section {
+    @apply font-title font-semibold text-gold-tp hover:text-gold-light transition-colors duration-200 cursor-pointer;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .nav-subitem {
+    @apply font-body text-gold-tp hover:text-gold-light transition-colors duration-200 cursor-pointer;
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .btn-primary {
+    @apply font-body text-xs font-semibold text-green-dark bg-gold-tp hover:bg-gold-light
+           px-4 py-2 rounded transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+}
