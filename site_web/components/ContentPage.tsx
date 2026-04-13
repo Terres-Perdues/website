@@ -66,9 +66,8 @@ export default function ContentPage({
             <div
               className="overflow-hidden"
               style={{
-                width: '100%',
-                maxWidth: imageSize,
-                aspectRatio: '1 / 1',
+                width: imageSize,
+                height: imageSize,
                 borderRadius: '50%',
                 position: 'relative',
               }}
