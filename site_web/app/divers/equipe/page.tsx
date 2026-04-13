@@ -1,7 +1,7 @@
 import InnerLayout from '@/components/InnerLayout'
 import ContentPage from '@/components/ContentPage'
 
-export const metadata = { title: 'L'Équipe — Terres Perdues' }
+export const metadata = { title: "L'Équipe — Terres Perdues" }
 
 export default function Page() {
   return (
@@ -12,7 +12,7 @@ export default function Page() {
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
           { label: 'Divers', href: '/divers' },
-          { label: 'L'Équipe' },
+          { label: "L'Équipe" },
         ]}
       />
     </InnerLayout>
