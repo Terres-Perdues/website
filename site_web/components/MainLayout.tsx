@@ -5,7 +5,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
   return (
     <div className="flex h-screen overflow-hidden">
       {/* Sidebar — desktop uniquement */}
-      <div className="hidden md:block">
+      <div className="hidden md:block desktop-nav">
         <Sidebar />
       </div>
 

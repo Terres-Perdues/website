@@ -28,11 +28,11 @@ export default function ContentPage({
   children,
 }: ContentPageProps) {
   return (
-    <div className="px-6 py-8 md:px-16 md:py-12">
+    <div style={{ padding: '5%' }}>
 
       {/* Breadcrumb */}
       {breadcrumbs && (
-        <nav className="flex items-center gap-2 mb-10">
+        <nav className="flex items-center gap-2 mb-10 mt-4 nav:mt-0">
           {breadcrumbs.map((crumb, i) => (
             <span key={i} className="flex items-center gap-2">
               {i > 0 && <span style={{ color: '#9a9080', fontSize: 11 }}>/</span>}
@@ -106,7 +106,7 @@ export default function ContentPage({
         </div>
 
         {/* Colonne 3 — Corps de texte */}
-        <div style={{ width: '100%', maxWidth: 400 }}>
+        <div className="md:pt-[115px]" style={{ width: '100%', maxWidth: 400 }}>
           {rightText && (
             <div
               className="font-body leading-relaxed"

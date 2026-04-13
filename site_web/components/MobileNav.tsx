@@ -77,7 +77,7 @@ export default function MobileNav() {
     <>
       {/* Barre du haut mobile */}
       <header
-        className="md:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between"
+        className="md:hidden mobile-nav-bar fixed top-0 left-0 right-0 z-50 flex items-center justify-between"
         style={{ backgroundColor: '#3d572f', height: 89, padding: '0 34px' }}
       >
         <Link href="/" onClick={() => setOpen(false)}>
@@ -123,7 +123,7 @@ export default function MobileNav() {
 
       {/* Menu plein écran */}
       <div
-        className="md:hidden fixed inset-0 z-40 flex flex-col transition-transform duration-300 ease-in-out"
+        className="md:hidden mobile-nav-menu fixed inset-0 z-40 flex flex-col transition-transform duration-300 ease-in-out"
         style={{
           backgroundColor: '#3d572f',
           transform: open ? 'translateX(0)' : 'translateX(-100%)',

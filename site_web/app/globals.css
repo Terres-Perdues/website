@@ -44,6 +44,24 @@
   }
 }
 
+@media (max-width: 1699px) {
+  .topnav-height {
+    zoom: 0.75;
+    height: 175px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  /* Réaffiche le menu mobile entre 768px et 1300px */
+  .mobile-nav-bar,
+  .mobile-nav-menu {
+    display: flex !important;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
