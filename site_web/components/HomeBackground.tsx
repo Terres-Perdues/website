@@ -2,21 +2,22 @@
 
 import Image from 'next/image'
 import { useMemo } from 'react'
+import { assetPath } from '@/lib/asset-path'
 
 const scenes = [
   {
-    bg: '/backgrounds/Accueil-arriere-plan-Brujamonte.jpg',
-    tag: '/svg/Tag-accueil-Brujamote.svg',
+    bg: assetPath('/backgrounds/Accueil-arriere-plan-Brujamonte.jpg'),
+    tag: assetPath('/svg/Tag-accueil-Brujamote.svg'),
     alt: 'Brujamonte',
   },
   {
-    bg: '/backgrounds/Accueil-arriere-plan-Khislev.jpg',
-    tag: '/svg/Tag-accueil-Khislev.svg',
+    bg: assetPath('/backgrounds/Accueil-arriere-plan-Khislev.jpg'),
+    tag: assetPath('/svg/Tag-accueil-Khislev.svg'),
     alt: 'Khislev',
   },
   {
-    bg: '/backgrounds/Accueil-arriere-plan-Toyalis.jpg',
-    tag: '/svg/Tag-accueil-Toyalis.svg',
+    bg: assetPath('/backgrounds/Accueil-arriere-plan-Toyalis.jpg'),
+    tag: assetPath('/svg/Tag-accueil-Toyalis.svg'),
     alt: 'Toyalis',
   },
 ]

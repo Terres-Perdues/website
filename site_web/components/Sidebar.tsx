@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { assetPath } from '@/lib/asset-path'
 
 const navigation = [
   {
@@ -70,7 +71,7 @@ export default function Sidebar() {
       {/* Logo */}
       <Link href="/" className="flex hover:opacity-85 transition-opacity" style={{ padding: '90px 90px 90px' }}>
         <Image
-          src="/svg/TP-logo-accueil.svg"
+          src={assetPath('/svg/TP-logo-accueil.svg')}
           alt="Terres Perdues — Accueil"
           width={390}
           height={390}
@@ -158,7 +159,7 @@ export default function Sidebar() {
           style={{ marginLeft: 34 }}
         >
           <Image
-            src="/svg/DISCORD.svg"
+            src={assetPath('/svg/DISCORD.svg')}
             alt="Discord"
             width={168}
             height={46}

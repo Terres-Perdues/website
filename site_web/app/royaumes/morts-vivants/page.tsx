@@ -1,5 +1,6 @@
 import InnerLayout from '@/components/InnerLayout'
 import ContentPage from '@/components/ContentPage'
+import { assetPath } from '@/lib/asset-path'
 
 export const metadata = { title: 'Morts-vivants — Terres Perdues' }
 
@@ -9,7 +10,7 @@ export default function Page() {
       <ContentPage
         title="Légion des damnés"
         subtitle="Morts-vivants"
-        image="/backgrounds/Accueil-arriere-plan-Toyalis.jpg"
+        image={assetPath('/backgrounds/Accueil-arriere-plan-Toyalis.jpg')}
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
           { label: 'Royaumes', href: '/royaumes' },

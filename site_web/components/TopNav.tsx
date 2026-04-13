@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useRef } from 'react'
+import { assetPath } from '@/lib/asset-path'
 
 const navItems = [
   {
@@ -73,7 +74,7 @@ export default function TopNav() {
     >
       {/* Logo + Title */}
       <Link href="/" className="flex items-center gap-3 mr-14 hover:opacity-85 transition-opacity flex-shrink-0">
-        <Image src="/svg/TP-logo-accueil.svg" alt="Terres Perdues" width={44} height={44} className="object-contain" />
+        <Image src={assetPath('/svg/TP-logo-accueil.svg')} alt="Terres Perdues" width={44} height={44} className="object-contain" />
         <div>
           <span className="font-title text-white block leading-none" style={{ fontSize: '1.15rem' }}>
             Terres Perdues
@@ -166,7 +167,7 @@ export default function TopNav() {
         </Link>
         <a href="https://discord.gg/7k2Jd47H" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
           <Image
-            src="/svg/DISCORD.svg"
+            src={assetPath('/svg/DISCORD.svg')}
             alt="Discord"
             width={90}
             height={25}
