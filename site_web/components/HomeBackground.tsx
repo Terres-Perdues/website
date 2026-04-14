@@ -60,8 +60,8 @@ export default function HomeBackground() {
             alt={`Tag ${scene.alt}`}
             height={90}
             width={390}
-            className="absolute z-10 drop-shadow-lg object-contain"
-            style={{ bottom: '90px', right: 0 }}
+            className="absolute z-10 drop-shadow-lg object-contain bottom-[290px] md:bottom-[90px]"
+            style={{ right: 0 }}
             priority
           />
         </div>
