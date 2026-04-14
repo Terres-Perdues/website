@@ -24,10 +24,24 @@ const scenes = [
 
 export default function HomeBackground() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
+  const [animKeys, setAnimKeys] = useState<number[]>(scenes.map(() => 0))
 
   useEffect(() => {
     setActiveIndex(Math.floor(Math.random() * scenes.length))
   }, [])
+
+  useEffect(() => {
+    if (activeIndex === null) return
+    setAnimKeys((prev) => prev.map((k, i) => (i === activeIndex ? k + 1 : k)))
+    const timer = setInterval(() => {
+      setActiveIndex((prev) => {
+        const next = ((prev ?? 0) + 1) % scenes.length
+        setAnimKeys((k) => k.map((v, i) => (i === next ? v + 1 : v)))
+        return next
+      })
+    }, 6000)
+    return () => clearInterval(timer)
+  }, [activeIndex === null])
 
   return (
     <div className="relative w-full h-full">
@@ -37,14 +51,16 @@ export default function HomeBackground() {
           className="absolute inset-0 transition-opacity duration-700"
           style={{ opacity: activeIndex === i ? 1 : 0 }}
         >
-          <Image
-            src={scene.bg}
-            alt={scene.alt}
-            fill
-            className="object-cover object-center"
-            priority
-            quality={90}
-          />
+          <div key={animKeys[i]} className="bg-pan absolute inset-0">
+            <Image
+              src={scene.bg}
+              alt={scene.alt}
+              fill
+              className="object-cover object-center"
+              priority
+              quality={90}
+            />
+          </div>
 
           {/* Subtle dark overlay on left edge for depth */}
           <div

@@ -62,6 +62,19 @@
   }
 }
 
+@keyframes panDiagonal {
+  from {
+    transform: scale(1.08) translate(0%, 0%);
+  }
+  to {
+    transform: scale(1.08) translate(-2.8%, -2.8%);
+  }
+}
+
+.bg-pan {
+  animation: panDiagonal 8.55s linear infinite alternate;
+}
+
 * {
   box-sizing: border-box;
 }
