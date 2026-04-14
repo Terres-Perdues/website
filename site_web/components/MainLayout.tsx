@@ -14,7 +14,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
 
       {/* Main content */}
       <main
-        className="flex-1 h-screen overflow-hidden md:ml-[var(--main-offset)] mt-16 md:mt-0"
+        className="flex-1 h-screen overflow-hidden md:ml-[var(--main-offset)] mt-[calc(4rem+20px)] md:mt-0 pb-[100px] md:pb-0"
       >
         {children}
       </main>
