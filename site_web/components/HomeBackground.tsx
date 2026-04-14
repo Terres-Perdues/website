@@ -54,14 +54,24 @@ export default function HomeBackground() {
             }}
           />
 
-          {/* Kingdom SVG tag — bottom right */}
+          {/* Kingdom SVG tag — mobile */}
+          <Image
+            src={scene.tag}
+            alt={`Tag ${scene.alt}`}
+            height={68}
+            width={293}
+            className="absolute z-10 drop-shadow-lg object-contain md:hidden"
+            style={{ bottom: '190px', right: 0 }}
+            priority
+          />
+          {/* Kingdom SVG tag — desktop */}
           <Image
             src={scene.tag}
             alt={`Tag ${scene.alt}`}
             height={90}
             width={390}
-            className="absolute z-10 drop-shadow-lg object-contain bottom-[190px] md:bottom-[90px] w-[293px] h-[68px] md:w-[390px] md:h-[90px]"
-            style={{ right: 0 }}
+            className="absolute z-10 drop-shadow-lg object-contain hidden md:block"
+            style={{ bottom: '90px', right: 0 }}
             priority
           />
         </div>
