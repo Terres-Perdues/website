@@ -78,7 +78,7 @@ export default function MobileNav() {
       {/* Barre du haut mobile */}
       <header
         className="md:hidden mobile-nav-bar fixed top-0 left-0 right-0 z-50 flex items-center justify-between"
-        style={{ backgroundColor: '#3d572f', height: 89, padding: '0 34px' }}
+        style={{ backgroundColor: '#3d572f', height: 89, paddingLeft: 19, paddingRight: 24 }}
       >
         <Link href="/" onClick={() => setOpen(false)}>
           <Image
