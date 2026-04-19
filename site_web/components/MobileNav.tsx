@@ -12,6 +12,7 @@ const navigation = [
     href: '/general',
     children: [
       { label: 'Règlements', href: '/general/reglements' },
+      { label: 'Roadmap', href: '/general/roadmap' },
       { label: 'Inscriptions', href: '/inscriptions' },
       { label: 'Statut', href: '/general/statut' },
     ],
@@ -35,6 +36,7 @@ const navigation = [
       { label: 'Métiers', href: '/systemes/metiers' },
       { label: 'Spécialisations', href: '/systemes/specialisations' },
       { label: 'Territoires', href: '/systemes/territoires' },
+      { label: 'Religions', href: '/systemes/religions' },
     ],
   },
   {

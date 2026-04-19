@@ -1,5 +1,6 @@
 import InnerLayout from '@/components/InnerLayout'
 import ContentPage from '@/components/ContentPage'
+import Image from 'next/image'
 import { assetPath } from '@/lib/asset-path'
 
 export const metadata = { title: 'Morts-vivants — Terres Perdues' }
@@ -39,6 +40,15 @@ export default function Page() {
           </p>
         }
       />
+      <div style={{ padding: '0 5% 5%' }}>
+        <Image
+          src={assetPath('/Arbre-Morts-TP2026 copy.jpg')}
+          alt="Arbre des Morts-vivants"
+          width={1920}
+          height={1080}
+          className="w-full h-auto object-contain rounded-2xl"
+        />
+      </div>
     </InnerLayout>
   )
 }

@@ -1,22 +1,21 @@
 import InnerLayout from '@/components/InnerLayout'
 import ContentPage from '@/components/ContentPage'
-import Image from 'next/image'
 import { assetPath } from '@/lib/asset-path'
 
-export const metadata = { title: 'Les Elfes — Terres Perdues' }
+export const metadata = { title: 'Religions — Terres Perdues' }
 
 export default function Page() {
   return (
     <InnerLayout>
       <ContentPage
-        title="Les Elfes"
-        subtitle="Royaumes"
-        image={assetPath('/backgrounds/Accueil-arriere-plan-Khislev.jpg')}
+        title="Religions"
+        subtitle="Systèmes"
+        image={assetPath('/backgrounds/Accueil-arriere-plan-Brujamonte.jpg')}
         imageSize={510}
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
-          { label: 'Royaumes' },
-          { label: 'Les Elfes' },
+          { label: 'Systèmes' },
+          { label: 'Religions' },
         ]}
         leftText={
           <p>
@@ -40,15 +39,6 @@ export default function Page() {
           </p>
         }
       />
-      <div style={{ padding: '0 5% 5%' }}>
-        <Image
-          src={assetPath('/Arbre-Elfes-TP2026 -web2.jpg')}
-          alt="Arbre des Elfes"
-          width={1920}
-          height={1080}
-          className="w-full h-auto object-contain rounded-2xl"
-        />
-      </div>
     </InnerLayout>
   )
 }

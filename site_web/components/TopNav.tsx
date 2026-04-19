@@ -13,6 +13,7 @@ const navItems = [
     children: [
       { label: 'Règlements', href: '/general/reglements' },
       { label: 'Inscriptions', href: '/inscriptions' },
+      { label: 'Roadmap', href: '/general/roadmap' },
       { label: 'Statut', href: '/general/statut' },
     ],
   },
@@ -35,6 +36,7 @@ const navItems = [
       { label: 'Métiers', href: '/systemes/metiers' },
       { label: 'Spécialisations', href: '/systemes/specialisations' },
       { label: 'Territoires', href: '/systemes/territoires' },
+      { label: 'Religions', href: '/systemes/religions' },
     ],
   },
   {
