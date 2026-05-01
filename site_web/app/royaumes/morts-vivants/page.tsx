@@ -220,7 +220,6 @@ export default function Page() {
             name="Momie" tier="Classe 3"
             description="Description de classe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in erat erat etiam interdum tortor proin dictum pulvinar nunc congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             pouvoirs={[
-              'Vulnérabilité au feu',
               'Assimilation des morts Shakoyolin',
               'Arme de classe : drain de mana',
             ]}
@@ -260,7 +259,6 @@ export default function Page() {
             description="Description de classe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in erat erat etiam interdum tortor proin dictum pulvinar nunc congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             pouvoirs={[
               'Drain de vie avancé',
-              'Vulnérabilité au feu et à l\'ail',
               'Polymorph créatures avancées',
               'Animal espion',
             ]}
