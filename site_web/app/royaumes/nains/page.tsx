@@ -1,5 +1,7 @@
 import InnerLayout from '@/components/InnerLayout'
 import ContentPage from '@/components/ContentPage'
+import Image from 'next/image'
+import ImageLightbox from '@/components/ImageLightbox'
 import { assetPath } from '@/lib/asset-path'
 
 export const metadata = { title: 'Les Nains — Terres Perdues' }
@@ -10,8 +12,9 @@ export default function Page() {
       <ContentPage
         title="Les Nains"
         subtitle="Royaumes"
-        image={assetPath('/backgrounds/Accueil-arriere-plan-Brujamonte.jpg')}
+        image={assetPath('/backgrounds/Nain-top-mine.png')}
         imageSize={510}
+        imageScale={1.6}
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
           { label: 'Royaumes' },
@@ -39,6 +42,17 @@ export default function Page() {
           </p>
         }
       />
+      <div style={{ backgroundColor: '#2d4022', padding: '5%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h2 className="font-title" style={{ fontSize: '2.5rem', color: '#e9e4d2', marginBottom: '60px' }}>Classes et évolutions</h2>
+        <ImageLightbox
+          src={assetPath('/arbre-nains-tp2026.jpg')}
+          alt="Arbre des Nains"
+          width={1920}
+          height={1080}
+          className="h-auto object-contain rounded-2xl"
+          style={{ width: '80%' }}
+        />
+      </div>
     </InnerLayout>
   )
 }

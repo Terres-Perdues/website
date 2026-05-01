@@ -11,6 +11,7 @@ interface ContentPageProps {
   subtitle?: string
   image?: string
   imageSize?: number
+  imageScale?: number
   breadcrumbs?: Breadcrumb[]
   leftText?: React.ReactNode
   rightText?: React.ReactNode
@@ -22,6 +23,7 @@ export default function ContentPage({
   subtitle,
   image,
   imageSize = 280,
+  imageScale = 1,
   breadcrumbs,
   leftText,
   rightText,
@@ -72,7 +74,7 @@ export default function ContentPage({
                 position: 'relative',
               }}
             >
-              <Image src={image} alt={title} fill className="object-cover" />
+              <Image src={image} alt={title} fill className="object-cover" style={{ transform: `scale(${imageScale})` }} />
             </div>
           </div>
         )}

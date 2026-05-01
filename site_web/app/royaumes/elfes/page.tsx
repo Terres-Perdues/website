@@ -1,6 +1,7 @@
 import InnerLayout from '@/components/InnerLayout'
 import ContentPage from '@/components/ContentPage'
 import Image from 'next/image'
+import ImageLightbox from '@/components/ImageLightbox'
 import { assetPath } from '@/lib/asset-path'
 
 export const metadata = { title: 'Les Elfes — Terres Perdues' }
@@ -11,7 +12,7 @@ export default function Page() {
       <ContentPage
         title="Les Elfes"
         subtitle="Royaumes"
-        image={assetPath('/backgrounds/Accueil-arriere-plan-Khislev.jpg')}
+        image={assetPath('/backgrounds/portrait-elfes.png')}
         imageSize={510}
         breadcrumbs={[
           { label: 'Accueil', href: '/' },
@@ -40,13 +41,15 @@ export default function Page() {
           </p>
         }
       />
-      <div style={{ padding: '0 5% 5%' }}>
-        <Image
-          src={assetPath('/Arbre-Elfes-TP2026 -web2.jpg')}
+      <div style={{ backgroundColor: '#2d4022', padding: '5%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h2 className="font-title" style={{ fontSize: '2.5rem', color: '#e9e4d2', marginBottom: '60px' }}>Classes et évolutions</h2>
+        <ImageLightbox
+          src={assetPath('/arbre-elfes-tp2026.jpg')}
           alt="Arbre des Elfes"
           width={1920}
           height={1080}
-          className="w-full h-auto object-contain rounded-2xl"
+          className="h-auto object-contain rounded-2xl"
+          style={{ width: '80%' }}
         />
       </div>
     </InnerLayout>

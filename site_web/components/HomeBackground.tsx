@@ -20,6 +20,11 @@ const scenes = [
     tag: assetPath('/svg/Tag-accueil-Toyalis.svg'),
     alt: 'Toyalis',
   },
+  {
+    bg: assetPath('/backgrounds/Nain-home-arriere-plan.jpg'),
+    tag: assetPath('/svg/Tag-accueil-Brujamote.svg'),
+    alt: 'Nains',
+  },
 ]
 
 export default function HomeBackground() {
