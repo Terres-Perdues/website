@@ -241,6 +241,7 @@ export default function Page() {
             pouvoirs={[
               'Cri de la banshee',
               'Adaptation spectrale',
+              'Invisibilité amélioré',
             ]}
           />
           <ClassCard
@@ -250,6 +251,7 @@ export default function Page() {
             pouvoirs={[
               'Piège macabre',
               "Arme de classe ignore l'armure",
+              'Invisibilité amélioré',
             ]}
           />
           <ClassCard
