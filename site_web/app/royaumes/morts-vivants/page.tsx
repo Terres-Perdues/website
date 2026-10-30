@@ -104,7 +104,10 @@ export default function Page() {
           <ClassCard
             image="1-squelette-3" imageExt="jpg"
             name="Squelette" tier="Classe 1"
-            description="Description de classe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in erat erat etiam interdum tortor proin dictum pulvinar nunc congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            description="Les squelettes sont des morts arrachés au repos par la nécromancie. Relevés par une liche, un nécromancien ou une autre puissance capable de commander aux morts, ils reviennent avec une conscience imparfaite, faite de volontés, d'instincts et parfois de fragments de ce qu'ils furent autrefois.
+Dépouillés de leur chair, ils ne sont pourtant pas aussi fragiles que leur apparence pourrait le laisser croire. La noirceur qui les anime renforce leurs os et leur confère une résistance comparable à une véritable armure. Les lames et les armes perforantes perdent également une partie de leur efficacité contre un corps qui n'a plus ni organes ni chair à protéger.
+Mais leur retour n'est que le commencement. À mesure que leur existence se prolonge, certains cherchent à donner un nouveau sens à ce qu'ils sont devenus. Dans les légions de Brujamonte, ils peuvent trouver un rang, une fonction et une nouvelle identité au service de Shakoyolin.
+D'autres ressentent plutôt le manque laissé par leur ancienne enveloppe. Pour eux commence alors une quête plus viscérale : retrouver la chair, et avec elle peut-être une part de l'être qu'ils étaient autrefois."
             pouvoirs={[
               'Parrying osseux',
             ]}
