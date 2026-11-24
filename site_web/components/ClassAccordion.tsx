@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 interface ClassAccordionProps {
   label: string
@@ -9,10 +9,6 @@ interface ClassAccordionProps {
 
 export default function ClassAccordion({ label, children }: ClassAccordionProps) {
   const [open, setOpen] = useState(false)
-
-  useEffect(() => {
-    setOpen(window.innerWidth >= 768)
-  }, [])
 
   return (
     <div style={{ marginTop: '2.5%' }}>

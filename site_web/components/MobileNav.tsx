@@ -12,7 +12,6 @@ const navigation = [
     href: '/general',
     children: [
       { label: 'Règlements', href: '/general/reglements' },
-      { label: 'Roadmap', href: '/general/roadmap' },
       { label: 'Inscriptions', href: '/inscriptions' },
       { label: 'Statut', href: '/general/statut' },
     ],
@@ -34,7 +33,6 @@ const navigation = [
     children: [
       { label: 'Évolutions', href: '/systemes/evolutions' },
       { label: 'Métiers', href: '/systemes/metiers' },
-      { label: 'Spécialisations', href: '/systemes/specialisations' },
       { label: 'Territoires', href: '/systemes/territoires' },
       { label: 'Religions', href: '/systemes/religions' },
     ],
@@ -48,7 +46,6 @@ const navigation = [
     label: 'Divers',
     href: '/divers',
     children: [
-      { label: 'FAQ', href: '/divers/faq' },
       { label: 'Équipe', href: '/divers/equipe' },
       { label: 'Remerciements', href: '/divers/remerciements' },
     ],
@@ -199,7 +196,7 @@ export default function MobileNav() {
             Inscription
           </Link>
           <a
-            href="https://discord.gg/7k2Jd47H"
+            href="https://discord.gg/9549RWNZPa"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
