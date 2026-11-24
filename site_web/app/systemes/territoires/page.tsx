@@ -69,23 +69,14 @@ export default function Page() {
             </p>
             <div className="font-body leading-relaxed mb-6" style={{ fontSize: 20, color: '#2a2a2a' }}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in erat erat.
-                Etiam a interdum tortor. <strong>Proin dictum</strong> pulvinar nunc, eu congue
-                tortor sagittis in. Integer imperdiet eleifend faucibus. Nam porta sagittis
-                vestibulum. Aliquam nisi orci, tincidunt a interdum nec, consectetur at felis.
+                Les cinq races et les clans s&apos;affrontent pour s&apos;emparer de territoires
+                miniers, forestiers, de chasse ou de gemmes, qu&apos;il faut exploiter, faire livrer
+                par caravanes et défendre contre les espions, les pillages et les batailles.
               </p>
             </div>
             <div className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a' }}>
               <p>
-                Nunc sollicitudin eget felis at fringilla. Integer elementum massa ut nisi
-                ullamcorper condimentum. Nulla at eleifend mauris, rhoncus hendrerit nisl.
-                Aenean velit leo, tincidunt ac volutpat eget, maximus a mi. Sed vehicula est
-                vitae scelerisque posuere. Cras ullamcorper eget justo non ultrices. Class
-                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                himenaeos. Mauris facilisis metus posuere, condimentum massa ac, pellentesque
-                dui. Duis vestibulum varius neque. Morbi dolor dolor, congue blandit libero
-                mollis, facilisis tempor mauris. Aliquam libero magna, tempor vel scelerisque
-                nec, vehicula ac ex.
+                Plus de détails à venir.
               </p>
             </div>
           </div>
