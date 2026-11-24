@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import ShowMore from '@/components/ShowMore'
 
 interface Breadcrumb {
   label: string
@@ -15,6 +16,9 @@ interface ContentPageProps {
   breadcrumbs?: Breadcrumb[]
   leftText?: React.ReactNode
   rightText?: React.ReactNode
+  extraText?: React.ReactNode
+  bottomContent?: React.ReactNode
+  rightTextMaxWidth?: number
   children?: React.ReactNode
 }
 
@@ -27,6 +31,9 @@ export default function ContentPage({
   breadcrumbs,
   leftText,
   rightText,
+  extraText,
+  bottomContent,
+  rightTextMaxWidth = 400,
   children,
 }: ContentPageProps) {
   return (
@@ -108,7 +115,7 @@ export default function ContentPage({
         </div>
 
         {/* Colonne 3 — Corps de texte */}
-        <div className="md:pt-[115px]" style={{ width: '100%', maxWidth: 400 }}>
+        <div className="md:pt-[115px]" style={{ width: '100%', maxWidth: rightTextMaxWidth }}>
           {rightText && (
             <div
               className="font-body leading-relaxed"
@@ -121,6 +128,27 @@ export default function ContentPage({
         </div>
 
       </div>
+
+      {bottomContent && (
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 mt-0">
+          {image && (
+            <div className="hidden md:block flex-shrink-0" style={{ width: `${imageSize}px` }} />
+          )}
+          <div style={{ width: '100%' }}>{bottomContent}</div>
+        </div>
+      )}
+
+      {extraText && (
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 mt-4 md:-mt-8">
+          {image && (
+            <div
+              className="hidden md:block flex-shrink-0"
+              style={{ width: `${imageSize}px` }}
+            />
+          )}
+          <ShowMore>{extraText}</ShowMore>
+        </div>
+      )}
     </div>
   )
 }

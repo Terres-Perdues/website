@@ -13,7 +13,6 @@ const navItems = [
     children: [
       { label: 'Règlements', href: '/general/reglements' },
       { label: 'Inscriptions', href: '/inscriptions' },
-      { label: 'Roadmap', href: '/general/roadmap' },
       { label: 'Statut', href: '/general/statut' },
     ],
   },
@@ -34,7 +33,6 @@ const navItems = [
     children: [
       { label: 'Évolutions', href: '/systemes/evolutions' },
       { label: 'Métiers', href: '/systemes/metiers' },
-      { label: 'Spécialisations', href: '/systemes/specialisations' },
       { label: 'Territoires', href: '/systemes/territoires' },
       { label: 'Religions', href: '/systemes/religions' },
     ],
@@ -48,7 +46,6 @@ const navItems = [
     label: 'Divers',
     href: '/divers',
     children: [
-      { label: 'FAQ', href: '/divers/faq' },
       { label: 'Équipe', href: '/divers/equipe' },
       { label: 'Remerciements', href: '/divers/remerciements' },
     ],
@@ -153,7 +150,7 @@ export default function TopNav() {
         >
           Inscription
         </Link>
-        <a href="https://discord.gg/7k2Jd47H" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+        <a href="https://discord.gg/9549RWNZPa" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
           <Image
             src={assetPath('/svg/DISCORD.svg')}
             alt="Discord"
