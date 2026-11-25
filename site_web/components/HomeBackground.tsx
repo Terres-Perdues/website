@@ -75,7 +75,7 @@ export default function HomeBackground() {
             }}
           />
 
-          {/* Kingdom SVG tag — mobile */}
+          {/* Kingdom SVG tag - mobile */}
           <Image
             src={scene.tag}
             alt={`Tag ${scene.alt}`}
@@ -85,7 +85,7 @@ export default function HomeBackground() {
             style={{ bottom: '190px', right: 0 }}
             priority
           />
-          {/* Kingdom SVG tag — desktop */}
+          {/* Kingdom SVG tag - desktop */}
           <Image
             src={scene.tag}
             alt={`Tag ${scene.alt}`}

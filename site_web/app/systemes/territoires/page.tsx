@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { assetPath } from '@/lib/asset-path'
 
-export const metadata = { title: 'Territoires — Terres Perdues' }
+export const metadata = { title: 'Territoires - Terres Perdues' }
 
 export default function Page() {
   return (
@@ -42,7 +42,7 @@ export default function Page() {
         {/* 2 colonnes */}
         <div className="flex flex-col md:flex-row gap-12">
 
-          {/* Colonne 1 — Carte */}
+          {/* Colonne 1 - Carte */}
           <div className="flex-1">
             <Image
               src={assetPath('/TP-CARTE copy.jpg')}
@@ -53,7 +53,7 @@ export default function Page() {
             />
           </div>
 
-          {/* Colonne 2 — Titre + textes */}
+          {/* Colonne 2 - Titre + textes */}
           <div className="flex-1">
             <h1
               className="font-title leading-tight mb-2"

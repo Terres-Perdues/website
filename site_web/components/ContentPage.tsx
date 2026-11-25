@@ -66,10 +66,10 @@ export default function ContentPage({
         </nav>
       )}
 
-      {/* Main layout — 3 colonnes desktop / 1 colonne mobile */}
+      {/* Main layout - 3 colonnes desktop / 1 colonne mobile */}
       <div className="flex flex-col md:flex-row gap-8 md:gap-12">
 
-        {/* Colonne 1 — Image ronde */}
+        {/* Colonne 1 - Image ronde */}
         {image && (
           <div className="flex-shrink-0 flex justify-center md:justify-start">
             <div
@@ -86,7 +86,7 @@ export default function ContentPage({
           </div>
         )}
 
-        {/* Colonne 2 — Titre, sous-titre, texte intro */}
+        {/* Colonne 2 - Titre, sous-titre, texte intro */}
         <div style={{ width: '100%', maxWidth: 400 }}>
           <h1
             className="font-title leading-tight mb-2"
@@ -114,7 +114,7 @@ export default function ContentPage({
           )}
         </div>
 
-        {/* Colonne 3 — Corps de texte */}
+        {/* Colonne 3 - Corps de texte */}
         <div className="md:pt-[115px]" style={{ width: '100%', maxWidth: rightTextMaxWidth }}>
           {rightText && (
             <div

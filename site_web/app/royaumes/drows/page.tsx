@@ -5,7 +5,7 @@ import ClassAccordion from '@/components/ClassAccordion'
 import Image from 'next/image'
 import { assetPath } from '@/lib/asset-path'
 
-export const metadata = { title: 'Les Drows — Terres Perdues' }
+export const metadata = { title: 'Les Drows - Terres Perdues' }
 
 function ClassCard({ image, imageExt = 'jpg', name, tier, description, pouvoirs }: {
   image: string
@@ -196,7 +196,7 @@ export default function Page() {
             <section style={{ breakInside: 'avoid', marginBottom: '2rem' }}>
               <h3 className="font-title" style={{ fontSize: '1.6rem', color: '#425d34', marginBottom: '0.5rem' }}>Relations avec les autres peuples</h3>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Elfes —</strong> Ils suscitent chez les Drows un mépris nourri par des siècles de
+                <strong>Elfes -</strong> Ils suscitent chez les Drows un mépris nourri par des siècles de
                 rancœur. Les Drows reprochent à leurs cousins d&apos;avoir abandonné leur royaume pour se
                 réfugier dans les forêts de Toyalis, tandis que les Elfes les accusent d&apos;avoir
                 précipité sa destruction par leur usage de la malepierre. Aux yeux des Drows, les Elfes
@@ -207,7 +207,7 @@ export default function Page() {
                 comme le véritable héritier de la grandeur perdue d&apos;Ulthuan.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Humains —</strong> Ils éveillent une curiosité mêlée de dédain. Leur existence
+                <strong>Humains -</strong> Ils éveillent une curiosité mêlée de dédain. Leur existence
                 éphémère et leurs prétentions à la vertu paraissent souvent dérisoires aux yeux des Drows.
                 Pourtant, leur ambition, leur ingéniosité et leur capacité à bâtir de puissantes
                 institutions suscitent une admiration difficile à dissimuler. Les Drows comprennent
@@ -217,7 +217,7 @@ export default function Page() {
                 convergent.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Nains —</strong> Les Nains sont considérés comme un peuple rustre, entêté et
+                <strong>Nains -</strong> Les Nains sont considérés comme un peuple rustre, entêté et
                 dépourvu du raffinement auquel les Drows accordent tant d&apos;importance. Leurs querelles
                 dépassent les simples différences culturelles. Les deux civilisations se disputent depuis
                 longtemps les richesses et les territoires souterrains, faisant de leurs rencontres une
@@ -225,7 +225,7 @@ export default function Page() {
                 exceptionnelle des Nains, tant sur les champs de bataille que dans leurs ouvrages légendaires.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a' }}>
-                <strong>Morts-Vivants —</strong> Les Morts-Vivants comptent parmi les alliés les plus
+                <strong>Morts-Vivants -</strong> Les Morts-Vivants comptent parmi les alliés les plus
                 précieux des Drows, qui voient dans leurs rangs une main-d&apos;œuvre servile d&apos;une
                 docilité et d&apos;une fiabilité exceptionnelles. Leur endurance et leur obéissance en font
                 des esclaves recherchés, capables d&apos;accomplir les travaux les plus pénibles comme les

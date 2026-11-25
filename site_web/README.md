@@ -1,4 +1,4 @@
-# Terres Perdues — Site Web
+# Terres Perdues - Site Web
 
 ## Prérequis
 - Node.js 18+ : https://nodejs.org/
@@ -52,11 +52,11 @@ Le workflow est dans `.github/workflows/deploy-pages.yml` et se déclenche sur l
 ## Structure
 
 ```
-app/           — Pages (Next.js App Router)
-components/    — Composants réutilisables
-public/        — Assets statiques (images, SVG)
-  backgrounds/ — Arrière-plans (3 scènes)
-  svg/         — Logos et tags SVG
+app/           - Pages (Next.js App Router)
+components/    - Composants réutilisables
+public/        - Assets statiques (images, SVG)
+  backgrounds/ - Arrière-plans (3 scènes)
+  svg/         - Logos et tags SVG
 ```
 
 ## Personnalisation

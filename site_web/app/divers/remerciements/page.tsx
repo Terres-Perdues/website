@@ -2,7 +2,7 @@ import InnerLayout from '@/components/InnerLayout'
 import ContentPage from '@/components/ContentPage'
 import { assetPath } from '@/lib/asset-path'
 
-export const metadata = { title: 'Remerciements — Terres Perdues' }
+export const metadata = { title: 'Remerciements - Terres Perdues' }
 
 export default function Page() {
   return (

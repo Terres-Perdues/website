@@ -5,7 +5,7 @@ import ClassAccordion from '@/components/ClassAccordion'
 import Image from 'next/image'
 import { assetPath } from '@/lib/asset-path'
 
-export const metadata = { title: 'Les Nains — Terres Perdues' }
+export const metadata = { title: 'Les Nains - Terres Perdues' }
 
 function ClassCard({ image, imageExt = 'jpg', name, tier, description, pouvoirs }: {
   image: string
@@ -183,14 +183,14 @@ export default function Page() {
                 ensemble peuvent donner naissance à des alliances durables.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Humains —</strong> Les Humains entretiennent avec les Nains des relations
+                <strong>Humains -</strong> Les Humains entretiennent avec les Nains des relations
                 généralement favorables. Leur ingéniosité, leur courage et leur capacité à bâtir de
                 puissants royaumes inspirent un respect sincère. Les Nains leur reprochent toutefois leur
                 empressement et leur tendance à prendre des engagements qu&apos;ils ne peuvent toujours
                 tenir.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Elfes —</strong> Les Elfes entretiennent avec les Nains une rivalité philosophique
+                <strong>Elfes -</strong> Les Elfes entretiennent avec les Nains une rivalité philosophique
                 aussi ancienne que profonde. Aux yeux des Elfes, les Nains sont des êtres insatiables, trop
                 prompts à défigurer le monde. Les Nains, quant à eux, reprochent aux Elfes leur passivité.
                 Cette opposition n&apos;exclut toutefois pas une admiration réciproque. Les Elfes
@@ -198,14 +198,14 @@ export default function Page() {
                 respectent la sagesse et la maîtrise des arcanes elfiques.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Drows —</strong> Les Drows figurent parmi leurs adversaires les plus détestés.
+                <strong>Drows -</strong> Les Drows figurent parmi leurs adversaires les plus détestés.
                 Leurs rivalités pour les territoires et les richesses souterraines ont engendré de nombreux
                 conflits, dont les Nains conservent fidèlement le souvenir. Ils méprisent les intrigues et
                 les trahisons des grandes familles drows, qu&apos;ils considèrent comme l&apos;antithèse
                 de leur conception de l&apos;honneur.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a' }}>
-                <strong>Morts-Vivants —</strong> Les Morts-Vivants inspirent une profonde aversion aux
+                <strong>Morts-Vivants -</strong> Les Morts-Vivants inspirent une profonde aversion aux
                 Nains. Leur existence représente une violation du repos éternel et des traditions sacrées
                 entourant leurs ancêtres. L&apos;expansion de Brujamonte constitue également une menace
                 pour leurs territoires. Face aux légions de Shakoyolin, les Nains opposent la résistance

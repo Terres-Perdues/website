@@ -71,7 +71,7 @@ export default function Sidebar() {
       <Link href="/" className="flex hover:opacity-85 transition-opacity" style={{ padding: '90px 90px 90px' }}>
         <Image
           src={assetPath('/svg/TP-logo-accueil.svg')}
-          alt="Terres Perdues — Accueil"
+          alt="Terres Perdues - Accueil"
           width={390}
           height={390}
           className="object-contain"

@@ -4,7 +4,7 @@ import MobileNav from './MobileNav'
 export default function InnerLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col h-screen overflow-hidden">
-      {/* TopNav — desktop uniquement */}
+      {/* TopNav - desktop uniquement */}
       <div className="hidden md:block flex-shrink-0 desktop-nav">
         <TopNav />
       </div>

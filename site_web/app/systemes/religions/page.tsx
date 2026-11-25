@@ -1,7 +1,7 @@
 import InnerLayout from '@/components/InnerLayout'
 import ContentPage from '@/components/ContentPage'
 
-export const metadata = { title: 'Religions — Terres Perdues' }
+export const metadata = { title: 'Religions - Terres Perdues' }
 
 const dieux = [
   {

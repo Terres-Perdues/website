@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ImageLightbox from '@/components/ImageLightbox'
 import { assetPath } from '@/lib/asset-path'
 
-export const metadata = { title: 'Morts-vivants — Terres Perdues' }
+export const metadata = { title: 'Morts-vivants - Terres Perdues' }
 
 function ClassCard({ image, imageExt = 'JPG', name, tier, description, pouvoirs }: {
   image: string
@@ -189,28 +189,28 @@ export default function Page() {
                 patience presque sans limites.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Humains —</strong> Ils sont aussi honnis que craints. Le culte de Caria constitue
+                <strong>Humains -</strong> Ils sont aussi honnis que craints. Le culte de Caria constitue
                 l&apos;antithèse absolue des enseignements de Shakoyolin, tandis que l&apos;Empire humain
                 représente leur plus grande menace. Leur rivalité dépasse les frontières : chacun voit dans
                 l&apos;autre une négation de sa propre existence. Certains Humains ont pourtant fui leurs
                 semblables pour trouver refuge à Brujamonte, alimentant la méfiance entre les deux peuples.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Elfes —</strong> Ils partagent avec les Morts-Vivants une vision du temps qui
+                <strong>Elfes -</strong> Ils partagent avec les Morts-Vivants une vision du temps qui
                 dépasse celle des autres peuples. Mais là où les Elfes cherchent à préserver
                 l&apos;équilibre du monde, les Morts-Vivants aspirent à briser le cycle naturel pour
                 instaurer un règne éternel. Malgré cette opposition, ils reconnaissent, voire jalousent,
                 la maîtrise exceptionnelle des arcanes elfiques.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Nains —</strong> Les Nains éprouvent une profonde aversion envers les Morts-Vivants,
+                <strong>Nains -</strong> Les Nains éprouvent une profonde aversion envers les Morts-Vivants,
                 dont l&apos;existence constitue une profanation du repos éternel et du sacré. Cette
                 hostilité trouve peu d&apos;écho à Brujamonte. Les Morts-Vivants saluent leur résistance
                 légendaire et la solidité de leurs forteresses, mais ne les considèrent comme aucun obstacle
                 dans la poursuite de leurs ambitions.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a' }}>
-                <strong>Drows —</strong> Les Drows comptent parmi les alliés privilégiés de Brujamonte.
+                <strong>Drows -</strong> Les Drows comptent parmi les alliés privilégiés de Brujamonte.
                 Les Morts-Vivants reconnaissent leur intelligence et leurs talents indispensables, mais
                 supportent difficilement leur arrogance et leur tendance à les traiter comme de simples
                 serviteurs. Leur franchise et leur rigueur s&apos;accordent mal avec les intrigues des
@@ -328,7 +328,7 @@ Elles apprennent ainsi à commander les morts, à maintenir leurs formations et 
             name="Nécrophage" tier="Classe 2"
             description={`Les Nécrophages sont des morts qui refusent d'accepter ce qu'ils sont devenus. Sous les lambeaux de chair qui recouvrent encore leurs os apparaissent des organes exposés et les vestiges d'un corps qu'ils cherchent désespérément à reconstruire. Là où les Wights embrassent leur nouvelle existence, eux s'accrochent au souvenir de celle qu'ils ont perdue.
 
-Cette obsession nourrit une relation tourmentée avec Shakoyolin. Ils lui doivent la puissance qui anime leurs os et leur confère une résistance presque impénétrable. Pourtant, chaque don reçu leur rappelle également celui qu'ils tiennent responsable de leur condition. Ils peuvent ainsi éprouver autant de reconnaissance envers leur créateur que de haine envers lui — et envers la créature qu'ils aperçoivent désormais dans leur propre reflet.
+Cette obsession nourrit une relation tourmentée avec Shakoyolin. Ils lui doivent la puissance qui anime leurs os et leur confère une résistance presque impénétrable. Pourtant, chaque don reçu leur rappelle également celui qu'ils tiennent responsable de leur condition. Ils peuvent ainsi éprouver autant de reconnaissance envers leur créateur que de haine envers lui - et envers la créature qu'ils aperçoivent désormais dans leur propre reflet.
 
 La chair des vivants devient pour eux bien davantage qu'une nourriture. En la dévorant, ils peuvent reconstruire rapidement leurs tissus et refermer des blessures qui auraient abattu d'autres morts. Les plus terribles peuvent même arracher le cœur encore battant d'un adversaire et s'approprier l'énergie vitale qu'il contient.
 

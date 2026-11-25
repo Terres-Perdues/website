@@ -5,7 +5,7 @@ import ClassAccordion from '@/components/ClassAccordion'
 import Image from 'next/image'
 import { assetPath } from '@/lib/asset-path'
 
-export const metadata = { title: 'Les Elfes — Terres Perdues' }
+export const metadata = { title: 'Les Elfes - Terres Perdues' }
 
 function ClassCard({ image, imageExt = 'png', name, tier, description, pouvoirs }: {
   image: string
@@ -185,12 +185,12 @@ export default function Page() {
             <section style={{ breakInside: 'avoid', marginBottom: '2rem' }}>
               <h3 className="font-title" style={{ fontSize: '1.6rem', color: '#425d34', marginBottom: '0.5rem' }}>Relations avec les autres peuples</h3>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                Les elfes apparaissent souvent froids et distants — et ils le sont. Afin d&apos;échapper à
+                Les elfes apparaissent souvent froids et distants - et ils le sont. Afin d&apos;échapper à
                 la soif du pouvoir et à la corruption, ils se terrent derrière leurs principes pour se
                 protéger de tout élan qui les mènerait de nouveau vers la déchéance.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Humains —</strong> Les elfes ont pris les humains sous leur tutelle lorsque ces
+                <strong>Humains -</strong> Les elfes ont pris les humains sous leur tutelle lorsque ces
                 derniers apparurent sur Tyleene, guidés par Caria. Depuis, ils ont été des alliés précieux
                 grâce à leur bravoure, à leur sens du devoir, à leur ténacité et à leur ingéniosité. Par
                 contre, un adage elfique dit « les hommes viennent du jour et de la nuit à la fois ». C&apos;est
@@ -200,7 +200,7 @@ export default function Page() {
                 enjeux. Bref, des alliés à tenir sous surveillance.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Nains —</strong> Une animosité a longtemps existé entre les nains et les elfes qui
+                <strong>Nains -</strong> Une animosité a longtemps existé entre les nains et les elfes qui
                 reprochaient au peuple d&apos;Aulë d&apos;être trop préoccupé par la satisfaction de
                 besoins terrestres et économiques et trop peu par les enjeux qui menacent Tyleene. Leur
                 franc-parler et leur manque de raffinement en font des compagnons déstabilisants pour des
@@ -210,7 +210,7 @@ export default function Page() {
                 forces du mal. Bref, de partenaires de longue date, mais pas toujours des amis.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Morts-Vivants —</strong> Ces aberrations ne devraient pas exister. Ces êtres sont
+                <strong>Morts-Vivants -</strong> Ces aberrations ne devraient pas exister. Ces êtres sont
                 un danger pour le cycle de la vie et l&apos;ordre naturel, en plus d&apos;être une
                 corruption des créations des premiers dieux. Aucune alliance ne pourrait exister avec ces
                 créatures qu&apos;il faut au contraire exterminer, leur influence néfaste répandant autour
@@ -218,7 +218,7 @@ export default function Page() {
                 laquelle se consacre exclusivement l&apos;ordre des Amazones.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a' }}>
-                <strong>Drows —</strong> Les Drows sont le souvenir d&apos;une ère de paix et de
+                <strong>Drows -</strong> Les Drows sont le souvenir d&apos;une ère de paix et de
                 prospérité perdue à tout jamais. Lorsqu&apos;un Elfe aperçoit un de ses cousins sombres,
                 il ne voit pas seulement la corruption, la déchéance et la pestilence, il voit
                 d&apos;abord et avant tout le plus grand échec de la race entière, celui de n&apos;avoir

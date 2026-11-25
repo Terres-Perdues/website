@@ -5,7 +5,7 @@ import ClassAccordion from '@/components/ClassAccordion'
 import Image from 'next/image'
 import { assetPath } from '@/lib/asset-path'
 
-export const metadata = { title: 'Les Humains — Terres Perdues' }
+export const metadata = { title: 'Les Humains - Terres Perdues' }
 
 function ClassCard({ image, imageExt = 'jpg', name, tier, description, pouvoirs }: {
   image: string
@@ -146,28 +146,28 @@ export default function Page() {
             <section style={{ breakInside: 'avoid', marginBottom: '2rem' }}>
               <h3 className="font-title" style={{ fontSize: '1.6rem', color: '#425d34', marginBottom: '0.5rem' }}>Relations avec les autres peuples</h3>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Nains —</strong> Les Humains entretiennent des relations généralement cordiales avec les Nains, dont
+                <strong>Nains -</strong> Les Humains entretiennent des relations généralement cordiales avec les Nains, dont
                 ils admirent le savoir-faire et les réalisations artisanales. Les deux peuples partagent un profond attachement
                 à l&apos;honneur et au travail bien fait, mais leurs tempéraments provoquent parfois quelques frictions. Les Humains
                 reprochent volontiers aux Nains leur entêtement et leur fidélité excessive aux traditions, particulièrement
                 lorsque celles-ci font obstacle à une solution plus pragmatique.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Elfes —</strong> Ils reconnaissent également la noblesse des origines elfiques et la richesse de leur
+                <strong>Elfes -</strong> Ils reconnaissent également la noblesse des origines elfiques et la richesse de leur
                 héritage. Toutefois, la hauteur avec laquelle certains Elfes considèrent les affaires des peuples mortels
                 leur paraît souvent insupportable. Là où un Humain voit l&apos;urgence d&apos;agir, un Elfe peut envisager des décennies
                 de réflexion. Cette différence de perception du temps nourrit l&apos;impression que les Elfes sont hautains,
                 pompeux et parfois indifférents aux souffrances de leurs voisins.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a', marginBottom: '0.75em' }}>
-                <strong>Drows —</strong> Les Drows suscitent un mépris beaucoup plus profond. Considérés comme des ennemis
+                <strong>Drows -</strong> Les Drows suscitent un mépris beaucoup plus profond. Considérés comme des ennemis
                 de l&apos;ordre impérial, ils sont généralement combattus et tenus à l&apos;écart. Les Humains ne peuvent toutefois
                 nier leur remarquable instinct de survie et leur débrouillardise. Il arrive que des intérêts communs favorisent
                 certaines collaborations discrètes, mais ces ententes demeurent fragiles, marquées par la méfiance et les
                 préjugés.
               </p>
               <p className="font-body leading-relaxed" style={{ fontSize: 15, color: '#2a2a2a' }}>
-                <strong>Morts-Vivants —</strong> Quant aux Morts-Vivants, ils représentent tout ce que la civilisation humaine
+                <strong>Morts-Vivants -</strong> Quant aux Morts-Vivants, ils représentent tout ce que la civilisation humaine
                 prétend combattre. Leur existence même constitue une offense aux enseignements de Caria, et leur emprise sur
                 les forces obscures leur vaut une haine presque universelle. Ironiquement, leur organisation militaire et leurs
                 ambitions impériales présentent des ressemblances troublantes avec celles des Humains, une comparaison que ces
