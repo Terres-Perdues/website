@@ -19,14 +19,16 @@ export default function Page() {
         ]}
         leftText={
           <p>
-            En gagnant du grade au combat et dans les quêtes, ton personnage passe par trois
-            paliers de classe propres à sa race, et chaque palier relève le maximum de ses
-            compétences.
+            En combattant et en jouant ton rôle, tu gagnes des points d&apos;expérience qui se
+            transforment en points de grade : il faut atteindre 50 points de grade pour passer à
+            ta 2e classe, puis 100 points de grade pour accéder à ta 3e classe.
           </p>
         }
         rightText={
           <p>
-            Plus de détails à venir.
+            En gagnant du grade au combat et dans les quêtes, ton personnage passe par trois
+            paliers de classe propres à sa race, et chaque palier relève le maximum de ses
+            compétences.
           </p>
         }
       />
